@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lora, Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
@@ -52,21 +52,22 @@ header nav ul li a:hover {
 }
 
 .hero{
-    background-image: url(stock.jpg);
+    background-image: url(hero-image.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
-    padding: 100px 0;
+    padding: 300px 0;
     text-align: center;
 }
 
 .hero h2 {
     margin: 0 0 20px 0;
-    font-size: 36px;
+    font-size: 56px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 28px;
     margin-bottom: 40px;
 }
 
@@ -166,4 +167,55 @@ footer ul li {
 
 footer ul li:last-child{
     margin-right: 0;
+}
+
+.category-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-box {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3 ease;
+}
+
+.category-box img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.category-box h3 {
+    margin-top: 10px;
+    font-size: 18px; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+.category-box:hover {
+    transform: scale(1.05); 
+}
+
+.category-box a {
+    text-decoration: none; 
+}
+
+.category-boxes .category-box h3 {
+    text-decoration: none; /* Remove underlines for h3 tags */
+}
+
+a {
+    text-decoration: none; /* Remove underlines for all anchor tags */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
 }
