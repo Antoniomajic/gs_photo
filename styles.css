@@ -86,13 +86,13 @@ header nav ul li a:hover {
 }
 
 .gallery{
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
 .gallery h2{
     margin: 0 0 40px 0;
-    font-size: 36px;
+    font-size: 42px;
 }
 
 .about{
@@ -176,10 +176,10 @@ footer ul li:last-child{
 }
 
 .category-box {
-    width: 250px;
-    height: 250px;
-    margin: 20px;
-    padding: 20px;
+    width: 310px;
+    height: 310px;
+    margin: 30px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
@@ -188,28 +188,21 @@ footer ul li:last-child{
 
 .category-box img {
     width: 100%;
-    border-radius: 5px;
     height: 100%;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .category-box h3 {
     margin-top: 10px;
-    font-size: 18px; 
+    font-size: 26px; 
     color: #333; 
     font-weight: bold; 
 }
 
 .category-box:hover {
-    transform: scale(1.05); 
-}
-
-.category-box a {
-    text-decoration: none; 
-}
-
-.category-boxes .category-box h3 {
-    text-decoration: none; /* Remove underlines for h3 tags */
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -218,4 +211,16 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 768px) {
+    .category-box {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .category-box {
+        width: calc(100% - 40px);
+    }
 }
